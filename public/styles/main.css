@@ -37,6 +37,14 @@ img{
     margin-right: auto;
 }
 
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1390px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -50,6 +58,7 @@ img{
 
 .nav {
     position: fixed;
+    display: flex;
     width: 250px;
     height: 100vh;
     background-color: #f3f3f3;
@@ -71,14 +80,98 @@ img{
     background-size: 55%;
 }
 
-.promo-title {
+.promo-content {
+    display: flex;
+    flex-direction: column;
+}
 
+.promo-title {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
 
 .promo-info {
-
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 28px;
+    color: #0f0f27;
 }
 
 .promo-create {
-    
+    position: relative;
+    align-self: flex-start;
+    display: block;
+    padding: 8px 18px;
+    background-color: #07073a;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    margin-left: 11px;
+}
+
+.promo-create:focus {
+    outline: 0;
+}
+
+.promo-create::after {
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -10px;
+    left: -10px;
+    content: '';
+    display: block;
+    border: 1px dashed #07073a;
+    border-radius: 5px;
+}
+
+.logo-link {
+    display: block;
+}
+
+.logo {
+    display: block;
+}
+
+.nav-list {
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin-bottom: 8px;
+}
+
+.nav-link {
+    display: block;
+    padding: 6px 18px;
+    text-decoration: none;
+    color: #07073a;
+}
+
+.nav-link:hover {
+    background-color: #e7e7e7;
+}
+
+.nav-link:active {
+    opacity: 0.6;
+}
+
+.nav-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 12px;
+}
+
+.copyright {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.wt-cw {
+    font-size: 14px;
 }
