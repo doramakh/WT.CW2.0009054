@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Articles</title>
+</head>
+<body>
+    <header class="header single-header">
+        <div class="container">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="/" class="header__link">☕️ Home</a>
+                </li>
+                <li class="header__item">
+                    <a href="/articles" class="header__link">📝 Articles</a>
+                </li>
+
+                <li class="header__item">
+                    <a href="/admin" class="header__link">💌 Admin</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+        <div class="single-articles">
+        <h2 class="articles-heading">📝 Articles</h2>
+        <p class="articles-headtitle">I like to blog about the stuff I'm interested in. Hopefully you'll find some of it interesting too.</p>
+    </div>
+
+    <div class="container">
+        <ul class="articles-list">
+            <% data.forEach(item => { %>
+                <li class="articles-item">
+                   <h3 class="article__heading"><%=item.title %></h3>
+                   <p class="article__text"><%=item.text %></p>
+                   <a href="/post/<%=item.id%>" class="article__link">📔 Read</a>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>
