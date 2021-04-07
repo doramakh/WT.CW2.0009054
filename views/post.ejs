@@ -47,7 +47,10 @@
     </nav>
     <section class="right-section singli-post-section">
         <div class="container single-post-container">
-            <h2 class="single-post-title"> <%=item.title %></h2>
+            <div class="single-div">
+                <h2 class="single-post-title"> <%=item.title %></h2>
+                <a class="post-fav" href="#">Add to favourites</a>
+            </div>
             <img class="single-img" src="/images/<%= item.image %>" alt="rasm">
             <p class="single-post-text"><%=item.text %></p>
         </div>

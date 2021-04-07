@@ -275,6 +275,7 @@ img{
     color: #f3f3f3;
     text-decoration: none;
     border-radius: 4px;
+    margin-right: 10px;
 }
 
 .post-read {
@@ -285,7 +286,23 @@ img{
     background-color: #aa0606;
 }
 .post-fav {
+    align-self: start;
+    padding: 3px 10px;
+    color: #f3f3f3;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
     background-color: #18904a;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.single-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
 }
 
 .single-post-container {
@@ -303,7 +320,10 @@ img{
 }
 
 .single-post-title {
-    font-size: 26px;
+    max-width: 800px;
+    padding-right: 30px;
+    margin: 0;
+    font-size: 24px;
     font-weight: 500;
     color: #07073a;
     text-transform: uppercase;
@@ -402,6 +422,18 @@ img{
     .posts {
         padding-left: 0;
     }
+
+    .promo {
+        padding-top: 50px;
+    }
+
+    .form-section {
+        padding-top: 10px;
+    }
+
+    .posts-section {
+        padding-top: 10px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -431,11 +463,19 @@ img{
     .form-heading {
         font-size: 34px;
     }
+
+    .single-div {
+        flex-direction: column;
+    }
+
+    .single-post-title {
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
     .nav-list {
-        width: 180px;
+        width: 240px;
     }
 
     .nav-link {
@@ -450,18 +490,16 @@ img{
         font-size: 16px;
     }
 
-    .posts {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .post-links {
         font-size: 14px;
     }
 
     .form-heading {
         font-size: 30px;
+    }
+
+    .singli-post-section {
+        margin-top: 40px;
     }
 
     .single-post-title {
@@ -474,5 +512,9 @@ img{
 
     .single-img {
         height: 200px;
+    }
+
+    .posts-heading {
+        font-size: 16px;
     }
 }

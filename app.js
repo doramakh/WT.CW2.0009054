@@ -9,6 +9,7 @@ const Home = require("./routes/home")
 const Posts = require("./routes/posts")
 const Post = require("./routes/post")
 const CreatePost = require("./routes/create-post")
+const Favourites = require("./routes/favs.js")
 
 app.use(express.json())
 app.use(fileUpload())
@@ -22,6 +23,7 @@ app.get("/post/:id", Post.GET)
 app.get("/posts", Posts.GET)
 app.get("/create-post", CreatePost.GET)
 app.post("/create-post", CreatePost.POST)
+app.get("favs", Favourites.GET)
 
 app.listen(PORT, () => {
     console.log("Server ready at local host:" + PORT)
