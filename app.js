@@ -25,6 +25,7 @@ app.get("/create-post", CreatePost.GET)
 app.post("/create-post", CreatePost.POST)
 app.get("/favs", Favourites.GET)
 app.get("/posts/:id/favs", Favourites.FAVID)
+app.get("/posts/:id/delete", Post.DELETE)
 
 app.listen(PORT, () => {
     console.log("Server ready at local host:" + PORT)
