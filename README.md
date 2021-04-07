@@ -6,10 +6,18 @@ This app is designed to create and read posts. Moreover, deleting posts, adding 
 The UI is simple, easy to follow. *"ejs"* template engine was used to build the app. 
 
 ## Instructions
-To run the app locally, firstly, `npm i` command is run to download all dependencies (node modules).
-To run the app, the command **`node app`** is run, as it was stated it package.json file (`start: "node app.js`).
+To run the app locally, follow the steps below:
 
-app.js is the main folder of the app. App is run on *localhost 5000*. 
+1. Clone the project repository:
+`git clone https://github.com/doramakh/WT.CW2.0009054.git`
+2. Change direction to the project folder:
+`cd [app folder]`
+3. Install all dependencies:
+`npm install`
+4. Run the app:
+`node app`
+5. API adress:
+`http://localhost:5000/api/v1/posts`  
 
 ## Dependencies’ list
 
