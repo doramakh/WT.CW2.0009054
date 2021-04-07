@@ -19,11 +19,12 @@ app.use(express.static("public"))
 app.set("view engine", "ejs")
 
 app.get("/", Home.GET)
-app.get("/post/:id", Post.GET)
-app.get("/posts", Posts.GET)
+app.get("/posts/:id", Post.GET)
+app.get("/api/v1/posts", Posts.GET)
 app.get("/create-post", CreatePost.GET)
 app.post("/create-post", CreatePost.POST)
-app.get("favs", Favourites.GET)
+app.get("/favs", Favourites.GET)
+app.get("/posts/:id/favs", Favourites.FAVID)
 
 app.listen(PORT, () => {
     console.log("Server ready at local host:" + PORT)

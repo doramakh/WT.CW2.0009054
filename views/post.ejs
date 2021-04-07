@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/posts">
+                    <a class="nav-link" href="/api/v1/posts">
                         All Posts
                     </a>
                 </li>
@@ -49,7 +49,7 @@
         <div class="container single-post-container">
             <div class="single-div">
                 <h2 class="single-post-title"> <%=item.title %></h2>
-                <a class="post-fav" href="#">Add to favourites</a>
+                <a class="post-fav" href="/posts/<%=item.id%>/favs">Add to favourites</a>
             </div>
             <img class="single-img" src="/images/<%= item.image %>" alt="rasm">
             <p class="single-post-text"><%=item.text %></p>

@@ -3,7 +3,7 @@ const path = require("path")
 const fs = require('fs')
 const util = require('util')
 
-const filePath = path.join(__dirname, "../", "data", "posts.txt")
+const filePath = path.join(__dirname, "../", "data", "posts.json")
 const imagePath = path.join(__dirname, "../","/public", "/images")
 
 const read = util.promisify(fs.readFile)
@@ -31,13 +31,12 @@ module.exports = {
             id: v4(),
             title: title,
             text: text,
-            image: name,
-            views: 0
+            image: name
         }
 
         data.push(newPost)
         write(filePath, JSON.stringify(data))
 
-        res.redirect("/posts")
+        res.redirect("api/v1/posts")
     }
 }
