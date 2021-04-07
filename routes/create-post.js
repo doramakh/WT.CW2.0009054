@@ -17,7 +17,7 @@ module.exports = {
 
         const content = await read(filePath, "utf8")
         const data = JSON.parse(content)
-
+        
         const image = fileImage
         const name = v4() + "." + image.mimetype.split("/")[1]
 

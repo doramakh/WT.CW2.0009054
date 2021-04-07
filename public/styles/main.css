@@ -279,7 +279,7 @@ img{
 }
 
 .post-read {
-    background-color: #07073a;
+    background-color: #215a17;
 }
 
 .post-delete {
@@ -331,6 +331,10 @@ img{
 
 .single-post-text {
     color: #07073a;
+}
+
+.post-delete-fav {
+    background-color: #07073a;
 }
 
 @media only screen and (max-width: 950px) {
