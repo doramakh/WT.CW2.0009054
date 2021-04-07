@@ -24,5 +24,5 @@ There are **7 dependencies** in the app:
 
 ## Links
 
-[Github Link](https://github.com/doramakh/WT.CW2.0009054)
-[Glitch Link](http://clammy-ginger-lychee.glitch.me/)
+1. [Github Link](https://github.com/doramakh/WT.CW2.0009054)
+2. [Glitch Link](http://clammy-ginger-lychee.glitch.me/)
