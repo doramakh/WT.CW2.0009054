@@ -194,7 +194,7 @@ img{
 }
 
 .form-heading {
-    color: #18904a;
+    color:  #07073a;
     font-size: 46px;
     margin-top: 0;
     text-align: center;
@@ -209,13 +209,17 @@ img{
     bottom: 30px;
 }
 
-.form-title, .form-textarea, .form-file {
+.form-title, .form-textarea {
     margin-bottom: 24px;
     border: 1px dashed #07073a;
 }
 
+.form-file {
+    margin-bottom: 24px;
+}
+
 .form-title::placeholder, .form-textarea::placeholder, .form-file::placeholder {
-    padding: 5px 10px;
+    padding: 10px 10px;
     color: #ccc;
     font-size: 16px;
 }
@@ -370,6 +374,7 @@ img{
         width: 100%;
         padding-left: 20px;
         padding-top: 100px;
+        background-position: bottom 50px right;
     }
     
     .nav {
