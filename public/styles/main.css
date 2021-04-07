@@ -223,7 +223,7 @@ img{
 .form-textarea {
     max-width: 700px;
     width: auto;
-    max-height: 250px;
+    height: 250px;
 }
 
 .form-submit-btn {
